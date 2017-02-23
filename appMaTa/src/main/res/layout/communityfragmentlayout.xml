@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--这个是隐藏的布局，然后通过动态的设置高度达到效果-->
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF7C0D"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_dangdi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="当地"
+            android:textColor="@color/white"
+            android:background="#FF7C0D"
+            android:textSize="20sp"/>
+
+
+        <com.ptu.mata.widget.MyReFreshRecycleView
+            android:id="@+id/myRefreashView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_dangdi"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrDrawableStart="@drawable/default_ptr_flip"
+            ptr:ptrHeaderBackground="#000"
+            ptr:ptrHeaderTextColor="@color/white">
+
+        </com.ptu.mata.widget.MyReFreshRecycleView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000">
+
+        <ImageView
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_middle_loading"/>
+    </RelativeLayout>
+</FrameLayout>
+</LinearLayout>

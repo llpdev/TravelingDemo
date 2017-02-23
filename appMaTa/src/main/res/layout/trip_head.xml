@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:weightSum="7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="6">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_lj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="丽江" />
+
+                <TextView
+                    android:id="@+id/tv_dl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="大理" />
+
+                <TextView
+                    android:id="@+id/tv_ls"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="拉萨" />
+
+                <TextView
+                    android:id="@+id/tv_qh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="青海" />
+
+                <TextView
+                    android:id="@+id/tv_cd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="成都" />
+
+                <TextView
+                    android:id="@+id/tv_qzg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="九寨沟" />
+            </LinearLayout>
+            <TextView
+                android:background="#fff"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:id="@+id/head_textview_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热门的目的地"/>
+        </FrameLayout>
+
+
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/down"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_down" />
+    </LinearLayout>
+
+   <!-- <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/a" />-->
+
+    <com.ptu.mata.widget.banner.LoopViewPager
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/loopViewPager"
+        ></com.ptu.mata.widget.banner.LoopViewPager>
+
+</LinearLayout>

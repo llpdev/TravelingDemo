@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="嘉兴"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv1"
+        android:text="酒店"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv2"
+        android:maxLength="15"
+        android:text="西塘名檀阁别院"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv3"
+        android:layout_toLeftOf="@+id/tvqi"
+        android:text="￥199"/>
+
+    <TextView
+        android:id="@+id/tvqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="起"/>
+
+    <TextView
+        android:id="@+id/tvzhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvqi"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tv7"
+        android:text="原价￥"/>
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvqi"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv3"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="15dp"
+        android:text="客栈"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="5dp"
+        android:background="#aaa"/>
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv4"
+        android:layout_below="@+id/tv4"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_hotel_list_destination"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="西塘下西街25弄"/>
+</RelativeLayout>

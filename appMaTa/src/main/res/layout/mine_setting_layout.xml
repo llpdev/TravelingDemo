@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="48px"
+        >
+        <ImageView
+            android:id="@+id/setting_back"
+            android:padding="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:text="设置"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#e9e6e6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       <TextView
+           android:layout_marginTop="0.5dp"
+           android:layout_width="match_parent"
+           android:text="去评分"
+           android:padding="10dp"
+           android:background="#fff"
+           android:textColor="#000"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="新消息通知"
+            android:padding="10dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:text="黑名单"
+            android:padding="10dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:text="清除缓存"
+            android:padding="10dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="联系MaTa"
+            android:padding="10dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:text="帮助与反馈"
+            android:padding="10dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/setting_outlogin"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:background="@drawable/login_button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="退出登录"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

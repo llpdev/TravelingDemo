@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+   >
+    <ImageView
+        android:id="@+id/zhuce_back"
+        android:padding="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:text="手机号注册"/>
+    <TextView
+        android:id="@+id/zhuce_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="下一步"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="13sp"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#e9e6e6"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/login_edittext_shape"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:background="#4fef46"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="填写密码完成注册"/>
+            <EditText
+                android:id="@+id/zhuce_pwd"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#aaa"/>
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/zhuce_pwd_s"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:hint="重复密码"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

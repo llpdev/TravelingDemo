@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="font_info">#999</color>
+    <color name="error_color">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="font_text">#666</color>
+    <color name="color_ccc">#CCC</color>
+    <color name="color_text">#4A9290</color>
+    <color name="color_text_select">#C3DBF2</color>
+
+</resources>
+
+
+

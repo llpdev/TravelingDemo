@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaTa</string>
+    <string name="login_text">这个世界繁华、苍莽、美好，却和你没有什么关系\n
+    因为你只有一个人\n\n\n\n
+    告别这种状态\n
+    去结伴\n
+    去外边看看\n\n\n
+    现在就登陆MaTa吧</string>
+
+
+    <string name="pop_left">弹出左侧菜单</string>
+    <string name="pop_right">弹出右侧菜单</string>
+    <string name="pop_bottom">弹出底部菜单</string>
+</resources>

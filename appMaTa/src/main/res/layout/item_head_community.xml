@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_local_header">
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="超过1.000.000家酒店供您选择"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/et_search"
+        android:layout_toRightOf="@+id/et_search"
+        android:background="#aaa"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_count"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_background"
+        android:drawableRight="@drawable/icon_edit"
+        android:hint="关键字"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:id="@+id/bt_location"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/et_search"
+        android:layout_toRightOf="@+id/et_search"
+        android:background="@drawable/bt_location"
+        android:drawableLeft="@drawable/icon_custom_location"
+        android:focusable="false"
+        android:padding="5dp"
+        android:text="位置"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/bt_location"
+        android:layout_alignRight="@+id/bt_location"
+        android:layout_below="@+id/bt_location"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_date">
+
+        <TextView
+            android:id="@+id/begin_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="入住日期"
+            android:textColor="#FF7F00"/>
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/begin_date"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/begin_date"
+            android:text="离开日期"
+            android:textColor="#FF7F00"/>
+
+        <TextView
+            android:id="@+id/begin_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/begin_date"
+            android:layout_below="@+id/begin_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="周一"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tv_date"
+            android:gravity="center"
+            android:text="1晚"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/end_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/end_date"
+            android:layout_below="@+id/begin_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="周二"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/begin_date"
+            android:layout_below="@+id/begin_week"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="2016-10-31"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/end_date"
+            android:layout_below="@+id/end_week"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="2016-11-01"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/layout_date"
+        android:layout_alignRight="@+id/layout_date"
+        android:layout_below="@+id/layout_date"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_search"
+        android:focusable="false"
+        android:text="查找酒店"
+        android:textColor="#fff"/>
+
+
+</RelativeLayout>

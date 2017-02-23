@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这个是隐藏的布局，然后通过动态的设置高度达到效果-->
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF7C0D"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="关于"
+        android:textColor="@color/white"
+        android:background="#FF7C0D"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#464646" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关注我吧"
+        android:textSize="23sp"
+        android:textColor="#555555"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_git"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">]
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/git"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:padding="10dp"
+            android:text="GitHub主页"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/icon_assembling_place"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp"
+        android:background="#464646" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">]
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/weibo"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:padding="10dp"
+            android:text="新浪微博"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/icon_assembling_place"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp"
+        android:background="#464646" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_git_xmdz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">]
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/github"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:padding="10dp"
+            android:text="项目开源地址"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/icon_assembling_place"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp"
+        android:background="#464646" />
+
+    <LinearLayout
+        android:id="@+id/ll_csdn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">]
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/csdn"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:padding="10dp"
+            android:text="CSDN个人博客"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/icon_assembling_place"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

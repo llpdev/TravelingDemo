@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_web2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptu.mata.view.activity.Web2Activity">
+
+     <ProgressBar
+       android:id="@+id/mProgressBar"
+        android:progress="50"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+         android:layout_marginTop="2dp"
+        android:layout_height="3dp"
+        android:progressDrawable="@drawable/progressbar_horizontal"
+        />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_below="@id/mProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        ></WebView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mProgressBar">
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000">
+
+            <ImageView
+                android:id="@+id/animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_middle_loading"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#af000000"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_hotel_empty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="暂时没有搜索结果！"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="您可以尝试删除筛选条件再试试"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
